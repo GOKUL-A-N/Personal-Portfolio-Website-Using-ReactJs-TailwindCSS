@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+body{
+  background-color: #0f0f0f;
+  font-family: 'Poppins',sans-serif;
+  font-weight: 700;
+  cursor: pointer;
+  position: relative;
+  scrollbar-color: rgb(218, 218, 218) rgb(0, 0, 0);
+  scrollbar-width: thin;
+}
+
+::-webkit-scrollbar {
+  width: 14px;
+}
+
+::-webkit-scrollbar-track{
+  height: 100px;
+  width: 15px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #5c5c5c;
+  border-radius: 10px;
+  border: 6px solid transparent;
+  background-clip:content-box;
+}
+
+.reveal{
+  display: inline-block;
+  animation: mainFadeIn 0.1s cubic-bezier(0.77, 0, 0.175, 1) 0.5s;
+  animation-direction: up;
+}
+
+@keyframes mainFadeIn {
+  0% {
+    opacity: 0;
+  }
+  5% {
+    opacity: 0.05;
+  }
+  10% {
+    opacity: 0.1;
+  }
+  15% {
+    opacity: 0.15;
+  }
+  20% {
+    opacity: 0.2;
+  }
+  25% {
+    opacity: 0.25;
+  }
+  30% {
+    opacity: 0.3;
+  }
+  35% {
+    opacity: 0.35;
+  }
+  40% {
+    opacity: 0.4;
+  }
+  45% {
+    opacity: 0.45;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  55% {
+    opacity: 0.55;
+  }
+  60% {
+    opacity: 0.6;
+  }
+  65% {
+    opacity: 0.65;
+  }
+  70% {
+    opacity: 0.7;
+  }
+  75% {
+    opacity: 0.75;
+  }
+  80% {
+    opacity: 0.8;
+  }
+  85% {
+    opacity: 0.85;
+  }
+  90% {
+    opacity: 0.9;
+  }
+  95% {
+    opacity: 0.95;
+  }
+  100% {
+    opacity: 1; 
+  }
+  }
+
+
+
+  .center-top-bottom {
+    background-position: 50% 50%;
+    background-size: 100% 0%;
+  }
+
+
+  /* loader page css */
+  .loader{
+    width: 100%;
+    height: 100vh;
+    z-index: 10;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #181818;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader svg{
+    width: 100%;
+}
+
+.loading-text{
+    width: 100%;
+    font-weight: bold;
+    color: #fff;
+    transform: translate(.4rem);
+    margin-top: 1rem;
+}
