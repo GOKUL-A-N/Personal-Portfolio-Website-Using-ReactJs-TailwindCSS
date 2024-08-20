@@ -1,4 +1,4 @@
-import React,{Suspense} from 'react'
+import React from 'react'
 import { MdOutlineHorizontalRule } from "react-icons/md";
 import project1Img from "../assets/project1Img.png";
 import project2Img from "../assets/project2Img.png";
@@ -7,11 +7,10 @@ import project5Img from "../assets/project5Img.png";
 import EducateUImg from "../assets/EducateUImg.png";
 import bikeServiceImg from "../assets/bikeServiceImg.png"
 import chatBot from "../assets/chatBot.png"
-import Loader from './Loader';
 
 const Projects = () => {
   return (
-    <Suspense fallBack={<Loader />}>
+    <div>
       <div className='flex mt-20 mb-10 flex-col  md:items-right relative md:justify-end text-[#ddd] sm:items-start h-screen sm:h-auto w-full md:flex-row'>
         <div className="w-full md:w-[50%] p-10 md:p-20 md:fixed md:left-0">
         <h1 className='text-[30px]  md:text-[40px] text-white  text-start font-bold z-10'>Works</h1>
@@ -82,7 +81,7 @@ const Projects = () => {
             </table>
         </div>
     </div>
-    </Suspense>
+    </div>
     
   )
 }
