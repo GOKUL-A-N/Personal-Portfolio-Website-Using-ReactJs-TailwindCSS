@@ -28,11 +28,11 @@ const Projects = () => {
                     <h6 className='absolute bottom-3 font-semibold tracking-wider text-[#ddd] pl-3'>ChatBot</h6>
                     <h2 className='absolute right-1 bottom-3 pr-4 text-tertiary xs:text-[30px] font-bold'>01</h2>
                   </td>
-                  <a href="https://github.com/GOKUL-A-N/ChatBot"><td className='w-1/2'><img src={chatBot} alt="" /></td></a>
+                  <a href="https://github.com/GOKUL-A-N/ChatBot"><td className='w-1/2'><img src={chatBot} alt="ChatBot" /></td></a>
                 </tr>
 
                 <tr className='w-full'>
-                  <a href="https://educateu-mt3gf8d9u-gokul-a-n.vercel.app/"><td className='w-1/2'><img src={EducateUImg} alt="" /></td></a>
+                  <a href="https://educateu-mt3gf8d9u-gokul-a-n.vercel.app/"><td className='w-1/2'><img src={EducateUImg} alt="E-Learning Website" /></td></a>
                   <td className='relative h-full w-full'>
                     <h6 className='absolute bottom-3 xs:font-semibold tracking-wider text-[#ddd] pl-3'>EducateU</h6>
                     <h2 className='absolute right-1 bottom-3 pr-4 text-tertiary xs:text-[30px] font-bold'>02</h2>
@@ -45,11 +45,11 @@ const Projects = () => {
                     <h6 className='absolute bottom-3 font-semibold tracking-wider text-[#ddd] pl-3'>CodePrep</h6>
                     <h2 className='absolute right-1 bottom-3 pr-4 text-tertiary xs:text-[30px] font-bold'>03</h2>
                   </td>
-                  <a href="https://github.com/GOKUL-A-N/codeprep"><td className='w-1/2'><img src={project2Img} alt="" /></td></a>
+                  <a href="https://github.com/GOKUL-A-N/codeprep"><td className='w-1/2'><img src={project2Img} alt="DSA Preparation Platform" /></td></a>
                 </tr>
 
                 <tr className='w-full'>
-                  <a href="https://github.com/GOKUL-A-N/Devconvo"><td className='w-1/2'><img src={project3Img} alt="" /></td></a>
+                  <a href="https://github.com/GOKUL-A-N/Devconvo"><td className='w-1/2'><img src={project3Img} alt="Blog Website" /></td></a>
                   <td className='relative h-full w-full'>
                     <h6 className='absolute bottom-3 font-semibold tracking-wider text-[#ddd] pl-3'>Devconvo</h6>
                     <h2 className='absolute right-1 bottom-3 pr-4 text-tertiary xs:text-[30px] font-bold'>04</h2>
@@ -61,11 +61,11 @@ const Projects = () => {
                     <h6 className='absolute bottom-3 font-semibold tracking-wider text-[#ddd] pl-3'>FitGuild</h6>
                     <h2 className='absolute right-1 bottom-3 pr-4 text-tertiary xs:text-[30px] font-bold'>05</h2>
                   </td>
-                  <a href="https://fit-guild-01-gokul-a-n.vercel.app/"><td className='w-1/2'><img src={project1Img} alt="" /></td></a>
+                  <a href="https://fit-guild-01-gokul-a-n.vercel.app/"><td className='w-1/2'><img src={project1Img} alt="Fitness Website" /></td></a>
                 </tr>
 
                 <tr className='w-full'>
-                  <a href="https://hoo-bank-gokul-a-n.vercel.app/"><td className='w-1/2'><img src={project5Img} alt="" /></td></a>
+                  <a href="https://hoo-bank-gokul-a-n.vercel.app/"><td className='w-1/2'><img src={project5Img} alt="Credit card Website" /></td></a>
                   <td className='relative h-full w-full'>
                     <h6 className='absolute bottom-3 font-semibold tracking-wider text-[#ddd] pl-3'>HooBank</h6>
                     <h2 className='absolute right-1 bottom-3 pr-4 text-tertiary xs:text-[30px] font-bold'>06</h2>

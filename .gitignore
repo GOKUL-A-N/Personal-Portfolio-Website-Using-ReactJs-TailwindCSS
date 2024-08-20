@@ -22,3 +22,34 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+
+ // const [loading,setLoading] = useState(true)
+
+  // useEffect(() =>{
+  //   const fakeDataFetch = () => {
+  //     setTimeout(() =>{
+  //       setLoading(false)
+  //     },5000)
+  //   }
+
+  //   fakeDataFetch();
+  // },[])
+
+  // return loading ? (
+  //   <Loader />
+  // ) : (
+  //   <div className='relative'>
+  //     <div className='flex right-2 top-2 fixed z-40'>
+  //     <Navbar />
+  //     </div>
+  //     <div className='flex left-4 top-4 fixed z-40'><Logo /></div>
+  //     <Social />
+  //     <Routes>
+  //     <Route path='/' element={<Home />} />
+  //     <Route path='/about' element={<About />} />
+  //     <Route path='/works' element={<Projects />} />
+  //     <Route path='/skills' element={<Skills />} />
+  //     <Route path='/contact' element={<Contact />} />
+  //   </Routes>
+  //   </div>
