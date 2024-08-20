@@ -14,7 +14,7 @@ export default function About() {
   return (
     <main className={styles.main}>
       <motion.div 
-        className={styles.mask}
+        className={`${styles.mask} h-screen w-full flex items-center justify-center`}
         animate={{
           WebkitMaskPosition: `${x - (size/2)}px ${y - (size/2)}px`,
           WebkitMaskSize: `${size}px`,
@@ -27,7 +27,7 @@ export default function About() {
         </div> 
       </motion.div>
 
-      <div className={styles.body}>
+      <div className={`${styles.body} h-screen w-full flex items-center justify-center`}>
       <div className=' flex flex-col p-2 m-4 sm:m-10 sm:p-10 md:m-20 md:p-20 justify-center '>
         <h6 className='text-[10px] sm:text-[15px] font-semibold text-start tracking-widest uppercase'></h6> <br />
         <h1 className='text-start text-[15px] sm:text-[25px] leading-tight md:text-[35px] xl:text-[45px]  md:tracking-wide  uppercase font-semibold'>More than just code, I build dreams. I am Gokul and I am a passionate web developer, I translate your vision into stunning, user-friendly websites that captivate audiences and achieve your goals.</h1>
