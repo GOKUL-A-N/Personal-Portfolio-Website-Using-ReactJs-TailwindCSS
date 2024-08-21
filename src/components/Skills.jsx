@@ -1,5 +1,6 @@
 import React from 'react'
 import SkillCard from './SkillCard'
+import globe from "../assets/globe.png"
 
 const Skills = () => {
 
@@ -24,7 +25,10 @@ const Skills = () => {
   ]
 
   return (
-    <div>
+    <div className='relative'>
+      <div className='absolute h-screen w-full z-'>
+        <img src={globe} className='h-screen w-auto' alt="globe image" />
+      </div>
       <div className='h-screen w-full flex items-center justify-center cursor-default'>
         <div className='h-auto w-[98%] sm:w-[89%] md:w-[75%]'>
           <h1 className='uppercase text-[#ddd] tracking-widest font-normal'>What i do</h1>
