@@ -1,14 +1,14 @@
-import React,{useState,useEffect} from 'react'
+import React,{useState,useEffect,Suspense} from 'react'
 import Home from './components/Home'
 import About from './components/About'
 import {Routes , Route} from "react-router-dom"
 import Navbar from './components/Navbar'
-import Projects from './components/Projects'
 import Social from './components/Social'
 import Loader from './components/Loader'
 import Skills from './components/Skills'
 import Contact from './components/Contact'
 import Logo from './components/Logo'
+const Projects = React.lazy(() => import('./components/Projects'))
 
 const App = () => {
 
@@ -38,9 +38,11 @@ const App = () => {
       <Routes>
       <Route path='/' element={<Home />} />
       <Route path='/about' element={<About />} />
-      <Route path='/works' element={<Projects />} />
       <Route path='/skills' element={<Skills />} />
       <Route path='/contact' element={<Contact />} />
+      <Route path='/works' element={
+        <Suspense fallback={<Loader />}><Projects /></Suspense>
+      } />
     </Routes>
     </div>
   )
