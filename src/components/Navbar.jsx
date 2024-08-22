@@ -27,10 +27,10 @@ const Navbar = () => {
   ]
 
   return (
-    <ul className='text-[#000] pt-2 pb-2 pl-3 pr-3 rounded-full text-[14px] hover:text-[#000]  text-center flex items-center justify-center gap-4 bg-[#eee]  bottom-6  z-10 cursor-none '>
+    <ul className='glass text-[#fff] pt-2 pb-2 pl-2 pr-2 md:pl-3 md:pr-3 rounded-full text-[12px] md:text-[14px]   text-center flex items-center justify-center gap-4 bg-[#eee]  bottom-6  z-10 cursor-none '>
       {
         navLinks.map((navLink,index) => {
-          return (<Link to={navLink.path} className='' key={index}><li className='hover:animate-pulse '>{navLink.name}</li></Link>  )
+          return (<Link to={navLink.path} className='' key={index}><li className='hover:animate-pulse hover:text-[#ccc]'>{navLink.name}</li></Link>  )
         })
       }
     </ul>

@@ -26,7 +26,7 @@ const Skills = () => {
 
   return (
     <div className='relative'>
-      <div className='absolute h-screen w-full z-'>
+      <div className='absolute h-screen w-full invisible md:visible -z-20'>
         <img src={globe} className='h-screen w-auto' alt="globe image" />
       </div>
       <div className='h-screen w-full flex items-center justify-center cursor-default'>

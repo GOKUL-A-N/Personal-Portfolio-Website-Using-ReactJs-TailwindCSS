@@ -20,7 +20,7 @@ const Experience = () => {
             year: "2019",
             course: "SSLC",
             institute: "Bharathi Vidhyalaya Matric Hr Sec School",
-            secret: "Semicolon is better than indentation"
+            secret: "A Dark mode developer"
         }
     ]
 

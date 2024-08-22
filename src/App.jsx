@@ -30,10 +30,10 @@ const App = () => {
     <Loader />
   ) : (
     <div className='relative'>
-      <div className='flex right-2 top-2 fixed z-40'>
+      <div className='flex right-2 top-2 fixed z-40 overflow-x-auto'>
       <Navbar />
       </div>
-      <div className='flex left-4 top-4 fixed z-40'><Logo /></div>
+      <div className='flex left-4 top-4 fixed z-40 invisible sm:visible'><Logo /></div>
       <Social />
       <Routes>
       <Route path='/' element={<Home />} />
