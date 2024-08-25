@@ -1,14 +1,16 @@
 import React,{useState,useEffect,Suspense} from 'react'
-import Home from './components/Home'
-import About from './components/About'
+import Home from './pages/Home'
+import About from './pages/About'
 import {Routes , Route} from "react-router-dom"
 import Navbar from './components/Navbar'
 import Social from './components/Social'
 import Loader from './components/Loader'
-import Skills from './components/Skills'
-import Contact from './components/Contact'
+import Skills from './pages/Skills'
+import Contact from './pages/Contact'
 import Logo from './components/Logo'
-const Projects = React.lazy(() => import('./components/Projects'))
+const Projects = React.lazy(() => import('./pages/Projects'))
+import Blogs from './pages/Blogs'
+import BlogPage from './pages/BlogPage'
 
 const App = () => {
 
@@ -43,6 +45,8 @@ const App = () => {
       <Route path='/works' element={
         <Suspense fallback={<Loader />}><Projects /></Suspense>
       } />
+      <Route path='/blogs' element={<Blogs />} />
+      <Route path='/blog/:id' element={<BlogPage />} />
     </Routes>
     </div>
   )

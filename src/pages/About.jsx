@@ -3,7 +3,7 @@ import styles from '../page.module.scss'
 import { useState } from 'react';  
 import { motion } from 'framer-motion';
 import useMousePosition from "../useMousePosition.js";
-import Experience from "./Experience.jsx"
+import Experience from "../components/Experience.jsx"
 
 export default function About() {
 
