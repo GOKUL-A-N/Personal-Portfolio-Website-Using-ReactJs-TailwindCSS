@@ -2,6 +2,7 @@ import styles from '../page.module.scss'
 import { useState } from 'react';  
 import { motion } from 'framer-motion';
 import useMousePosition from "../useMousePosition.js";
+import Social from "../components/Social.jsx";
 
 export default function Home() {
 
@@ -31,7 +32,9 @@ export default function Home() {
         <h1 className='reveal delay-100 text-center text-[40px] sm:text-[45px] leading-tight md:text-[75px] xl:text-[85px]  md:tracking-normal  uppercase font-black'><span>Making</span><br /> <span className='text-[#ff512e]'>Good</span> <br /> <span className='text-[#ff512e]'>Designs</span> <br /> <span>Since</span> <br /> <span>2021</span> </h1>
         </div> 
       </div>
-
+      <div className='visible md:invisible'>
+        <Social />
+      </div>
     </main>
   )
 }

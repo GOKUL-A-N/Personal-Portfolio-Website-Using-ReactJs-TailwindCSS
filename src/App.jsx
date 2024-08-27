@@ -36,7 +36,7 @@ const App = () => {
       <Navbar />
       </div>
       <div className='flex left-4 top-4 fixed z-40 invisible sm:visible'><Logo /></div>
-      <Social />
+     <div className='invisible md:visible'> <Social /></div>
       <Routes>
       <Route path='/' element={<Home />} />
       <Route path='/about' element={<About />} />
