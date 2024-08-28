@@ -42,15 +42,28 @@ const BlogPage = () => {
                     blog.blogContent.map((b,index) => {
                         if(b.highlight === 'normal'){
                             return (
-                                <p className='text-white font-normal text-[10px] md:text-[15px] p-4'>{b.content}</p>
+                                <p key={index} className='text-white font-normal text-[10px] md:text-[15px] p-4'>{b.content}</p>
                             )
                         }else if(b.highlight === 'terminal'){
                             return (
-                                <p className=' font-semibold rounded-md bg-[#ff512e] md:text-[15px] text-[10px] m-2 p-2 text-black'>{b.content}</p>
+                                <p key={index} className=' font-semibold rounded-md bg-[#ff512e] md:text-[15px] text-[10px] m-2 p-2 text-black'>{b.content}</p>
                             )
-                        }else{
+                        }else if(b.highlight === 'options'){
                             return (
-                                <p className='text-white font-bold tracking-wider md:text-[15px] text-[10px] p-4'>{b.content}</p>
+                                <ul key={index}>
+                                    {
+                                        b.content.map((option,idx) => {
+                                            return (
+                                                <li key={idx}>{option}</li>
+                                            )
+                                        })
+                                    }
+                                </ul>
+                            )
+                        }
+                        else{
+                            return (
+                                <p key={index} className='text-white font-bold tracking-wider md:text-[15px] text-[10px] p-4'>{b.content}</p>
                             )
                         }
                     })
