@@ -32,9 +32,9 @@ const Blogs = () => {
     return ( <Loader />)
   }else{
     return (
-        <div className='w-full flex mt-10 items-center  justify-center flex-col cursor-default'>
+        <div className='w-full flex mt-20 items-center  justify-center flex-col cursor-default'>
             <div className='w-[98%] md:w-[85%]'>
-                <h1 className='text-[#ddd] tracking-widest font-normal'>Blogs</h1>
+                <h1 className='text-[#ddd] tracking-widest font-normal uppercase'>Blogs</h1>
                 <div className='p-0 md:p-5 flex flex-wrap gap-3'>
                     {
                         blogs.map((blog,index) => {

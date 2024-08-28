@@ -35,7 +35,7 @@ const BlogPage = () => {
         return (<h1>Blog not found</h1>)
     }else{
         return (
-            <div className='mt-10 w-full flex flex-col items-center justify-center cursor-default'>
+            <div className='mt-20 w-full flex flex-col items-center justify-center cursor-default'>
                 <div className='w-full md:w-[60%]'>
                 <h1 className='p-4 text-[#ff512e] font-black text-[15px] md:text-[20px]'>{blog.blogTitle}</h1>
                 {
